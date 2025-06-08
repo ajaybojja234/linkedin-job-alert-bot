@@ -1,0 +1,9 @@
+services:
+  - type: worker
+    name: linkedin-job-alert-bot
+    env: python
+    repo: https://github.com/ajaybojja234/linkedin-job-alert-bot
+    branch: main
+    buildCommand: pip install -r requirements.txt
+    startCommand: bash start.sh
+    autoDeploy: true
